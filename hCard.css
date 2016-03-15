@@ -1,0 +1,35 @@
+body{margin:0px;}
+section { display:block}
+h1,h4,h6,label{font-family: sans-serif;}
+h4,h6,label{text-transform:uppercase;}
+footer{padding-top:30px;text-align:center;}
+
+h1{color: #394f63;font-weight: bold;}
+h6{border-bottom: 1px solid #cbd1d4;color: #cbd1d4;}
+label{color: #394f63;font-size:small;line-height: 26px;}
+input[type=email]{text-transform:none;}
+input{border: 1px solid #cbd1d4;border-radius: 4px;-wekit-border-radius: 4px;-ms-border-radius: 4px;display: flex;font-family: Times New Roman;font-size: 23px;
+    height: 30px;padding-left: 7px;width: 90%;text-transform: capitalize;}
+button{background-color: #3fa8e2;background-image: none;border: medium none;border-radius: 4px;color: #ffffff;font-size: 20px;height: 40px;padding: 0 20px;
+    text-align: center;box-shadow: 0 2px #3f77b2;-webkit-box-shadow: 0 2px #3f77b2;-ms-box-shadow: 0 2px #3f77b2;}
+
+
+.row{display:flex}
+.col2{width:50%}
+section > div.row{margin-top:10px;}
+.mainContainer > div.col{padding:40px;}
+.mainContainer > div.col:last-child{background-color:#e7e9ec;}
+.mainContainer > div.col:last-child h4{border: 0 none;text-align: right;color:#a5b4b5;}
+.hCardParentContainer{transform: translate(0px, 30%);-ms-transform:translate(0px, 30%);-webkit-transform:translate(0px, 30%);}
+.hCardParentContainer .header{background-color: #394f63;color: #ffffff;font-family: georgia;font-size: 41px;height: 60px;padding-left: 20px;}
+.hCardContainer .content{background-color:white;padding: 20px;box-shadow: 0 2px #aeaeae;-webkit-box-shadow: 0 2px #aeaeae;-moz-box-shadow: 0 2px #aeaeae;}
+.hCardContainer .content > .row{border-bottom:1px solid #cbd1d4;margin-top: 17px;min-height: 17px;}
+.hCardContainer .label{text-transform:uppercase;color:#394f63;font-size: 15px;}
+.hCardContainer .column:first-child{width:20%;}
+.hCardContainer .value{font-family: times new roman;font-size: 24px;line-height: 12px;}
+.nestedContainer{width:100%}
+.nestedContainer .column{display:flex}
+.nestedContainer .col2{width:50%!important;}
+.nestedContainer .col1{width:40%!important;}
+
+

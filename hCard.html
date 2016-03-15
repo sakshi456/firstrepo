@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hCard Builder</title>
+    <link rel="stylesheet" type="text/css" href="hCard.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+<div class="row mainContainer">
+    <div class="col col2">
+        <h1>hCard Builder</h1>
+        <section>
+            <h6>personal details</h6>
+            <div class="row">
+	        <div class="col col2">
+		    <label>given name</label>
+  		    <input type="text" ng-model="givenName">
+		</div>
+		<div class="col col2">
+		    <label>surname</label>
+  		    <input type="text" ng-model="surName">
+		</div>
+	    </div>
+	    <div class="row">
+	        <div class="col col2">
+		    <label>email</label>
+  		    <input type="email" ng-model="email">
+		</div>
+		<div class="col col2">
+		    <label>phone</label>
+  		    <input type="text" ng-model="phone">
+		</div>
+	    </div>
+
+        </section>
+        <section>
+            <h6>address</h6>
+	    <div class="row">
+	        <div class="col col2">
+		    <label>house name or #</label>
+  		    <input type="text" ng-model="houseName">
+		</div>
+		<div class="col col2">
+		    <label>street</label>
+  		    <input type="text" ng-model="street">
+		</div>
+	    </div>
+	    <div class="row">
+	        <div class="col col2">
+		    <label>suburb</label>
+  		    <input type="text" ng-model="suburb">
+		</div>
+		<div class="col col2">
+		    <label>state</label>
+  		    <input type="text" ng-model="state">
+		</div>
+	    </div>
+            <div class="row">
+	        <div class="col col2">
+		    <label>postcode</label>
+  		    <input type="text" ng-model="postcode">
+		</div>
+		<div class="col col2">
+		    <label>country</label>
+     		    <input type="text" ng-model="country">
+		</div>
+	    </div>
+        </section>
+	<footer>
+	    <button type="button">Create hCard</button>  
+
+	</footer>
+	</div>
+    
+    <div class="col col2">
+        <div class="hCardParentContainer">
+	    <h4>hcard preview</h4>
+            <div class="hCardContainer">
+	        <div class="header">
+		    {{givenName + " " + surName}}
+		</div>
+		<div class="content">
+		    <div class="row">
+		        <div class="column">
+			    <div class="label">email</div> 
+			</div>
+			<div class="column value">
+			    {{email}}
+			</div>
+		    </div>
+                    <div class="row">
+		        <div class="column">
+			    <div class="label">phone</div> 
+			</div>
+			<div class="column value">
+			    {{phone}}
+			</div>
+		    </div>
+		    <div class="row">
+		        <div class="column">
+			    <div class="label">address</div> 
+			</div>
+			<div class="column value">
+			    {{houseName + street }}
+			    
+			</div>
+		    </div>
+		    <div class="row">
+		        <div class="column">
+			</div>			    
+			<div class="column value">
+			    {{suburb + ", " + state}}
+			    
+			</div>
+		    </div>
+
+		    <div class="row">
+			<div class="nestedContainer">
+			    <div class="row">
+			        <div class="column col2">
+		        	    <div class="column col1">
+			    		<div class="label">postcode</div> 
+				    </div>
+				    <div class="column col2 value">
+			    		{{postcode}}
+				    </div>
+				</div>
+				<div class="column col2">
+	 			    <div class="column col1">
+			    		<div class="label">country</div> 
+				    </div>
+				    <div class="column col2 value">
+			                 {{country}}
+			
+				    </div>
+			    </div>
+			</div>
+		    </div>
+
+		</div>
+	    </div>
+	</div>
+
+
+
+    </div>
+</body>
+</html>
